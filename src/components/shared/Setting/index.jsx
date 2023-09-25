@@ -3,6 +3,7 @@ import classes from './Settings.module.css';
 import { useRef, useState } from "react";
 import Text from "./components/Text";
 import Color from "./components/Color";
+import Photo from "./components/Photo";
 
 const Settings = ({ handleChange }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -11,7 +12,8 @@ const Settings = ({ handleChange }) => {
 
     const Panels = {
         "color": Color,
-        "text": Text
+        "text": Text,
+        "photo": Photo
     }
 
     const handleClick = (target) => {
@@ -34,6 +36,11 @@ const Settings = ({ handleChange }) => {
                     onClick={() => handleClick("text")}>
                     Text
                 </Box>
+                <Box
+                    className={classes.SettingBottom}
+                    onClick={() => handleClick("photo")}>
+                    Photo
+                </Box>
             </Box>
             <Drawer
                 isOpen={isOpen}
@@ -44,7 +51,7 @@ const Settings = ({ handleChange }) => {
 
             >
                 <DrawerContent style={{
-                    marginLeft: "100px"
+                    marginLeft: "7.5vw"
                 }}>
                     <DrawerCloseButton />
                     <DrawerHeader>Custom style</DrawerHeader>
