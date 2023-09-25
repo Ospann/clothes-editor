@@ -1,4 +1,4 @@
-import { Box, Drawer, Image, DrawerCloseButton, Input, DrawerFooter, DrawerOverlay, useDisclosure, DrawerHeader, DrawerContent, DrawerBody } from "@chakra-ui/react";
+import { Box, Drawer, DrawerCloseButton, useDisclosure, DrawerHeader, DrawerContent, DrawerBody } from "@chakra-ui/react";
 import classes from './Settings.module.css';
 import { useRef, useState } from "react";
 import Text from "./components/Text";
