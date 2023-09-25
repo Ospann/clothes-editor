@@ -1,8 +1,8 @@
-import Settings from "./components/shared/Settings"
+// import Settings from "./components/shared/Settings"
 import Display from "./components/shared/Display"
 import { Box } from "@chakra-ui/react"
 import { useState } from "react"
-
+import Settings from "./components/shared/Setting";
 function App() {
 
   const [settings, setSettings] = useState({
@@ -22,12 +22,14 @@ function App() {
 
   return (
     <Box
+      h='100vh'
       w='100%'
+      alignItems="center"
       display="flex"
       justifyContent="space-between"
     >
-      <Display {...settings} />
       <Settings handleChange={handleChange} />
+      <Display {...settings} />
     </Box>
   )
 }

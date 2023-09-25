@@ -1,22 +1,8 @@
-import { Box, Heading, Input, Slider, SliderTrack, SliderFilledTrack, SliderThumb } from "@chakra-ui/react";
+import { Box, Heading, Slider, SliderFilledTrack, Input, SliderTrack, SliderThumb } from "@chakra-ui/react";
 
-const Settings = ({ handleChange }) => {
-
+const Text = ({ handleChange }) => {
     return (
-        <Box w="30%" h="100%" padding="4" display="flex" flexDirection="column" gap="2rem" border="1px solid #e6e6e6">
-            <Box className="setting-block">
-                <Heading size='md'>Clothes color</Heading>
-                <Box display="flex" h="12" gap="1rem">
-                    <Box onClick={() => handleChange("clother_color", "red")} className="colorButton" backgroundColor="red" />
-                    <Box onClick={() => handleChange("clother_color", "black")} className="colorButton" backgroundColor="black" />
-                    <Box onClick={() => handleChange("clother_color", "white")} className="colorButton" backgroundColor="white" />
-                    <Box onClick={() => handleChange("clother_color", "blue")} className="colorButton" backgroundColor="blue" />
-                </Box>
-            </Box>
-            <Box className="setting-block">
-                <Heading size='md'>Photo</Heading>
-                <Input type="file" />
-            </Box>
+        <Box  h="100%" padding="4" display="flex" flexDirection="column" gap="2rem">
             <Box className="setting-block">
                 <Heading size='md'>Text</Heading>
                 <Input placeholder="Your Text" onChange={(e) => handleChange("text", e.target.value)} />
@@ -44,4 +30,4 @@ const Settings = ({ handleChange }) => {
     )
 }
 
-export default Settings;
+export default Text;

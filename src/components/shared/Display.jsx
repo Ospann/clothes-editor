@@ -7,7 +7,7 @@ const Display = ({ clother_color, text, text_color, text_size, image }) => {
         textShadow: "1px 1px 2px black",
     };
     return (
-        <Box w="70%" display="flex" justifyContent="center">
+        <Box w="70%" h="70%" display="flex" justifyContent="center">
             <Box
                 w="60%"
                 aspectRatio="1 / 0.8"

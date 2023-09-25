@@ -1,0 +1,30 @@
+.SettingBox {
+    background-color: #2294d1;
+    height: 100%;
+    width: 7.5vw;
+    min-width: 100px;
+    z-index: 10000000000000;
+    color: white;
+}
+
+.SettingBottom {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.SettingBottom:hover {
+    background-color: #e6e6e6;
+    color: #2294d1;
+}
+
+.colorContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    overflow: hidden;
+    justify-items: center;
+}
